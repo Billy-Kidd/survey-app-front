@@ -1,5 +1,6 @@
 footer {
-    background-color: #007bff;
+    background-color: deepskyblue;
+
     color: white;
     padding: 20px;
     text-align: center;
@@ -10,6 +11,7 @@ footer {
     width: 100%; /* Робить на всю ширину */
     z-index: 1000; /* Щоб не ховався за іншими елементами */
     clip-path: polygon(50% -300%, 0% 100%, 100% 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Легка тінь */
 }
 
 body {

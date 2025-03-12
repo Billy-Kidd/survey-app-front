@@ -1,5 +1,5 @@
 header {
-    background-color: #007bff;
+    background-color: deepskyblue;
     color: white;
     padding: 20px;
     text-align: center;
@@ -10,6 +10,8 @@ header {
     width: 100%;
     z-index: 1000;
     clip-path: polygon(0% 0%, 100% 0%, 50% 300%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Легка тінь */
+
 }
 body {
     padding-top: 80px; /* Додаємо відступ, щоб контент не заходив під хедер */
