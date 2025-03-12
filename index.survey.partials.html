@@ -1,0 +1,19 @@
+<div>
+    <h2 class="survey-title">Опитування</h2>
+    <form id="survey-form">
+        <div class="step active">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" class="next-btn">Далі</button>
+        </div>
+
+        <div id="question-container"></div>
+    </form>
+
+    <p id="message" class="hidden">Дякуємо за ваш відгук!</p>
+    <pre id="json-output" class="hidden"></pre>
+</div>
