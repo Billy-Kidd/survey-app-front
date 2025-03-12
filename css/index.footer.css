@@ -1,0 +1,18 @@
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    position: fixed; /* Фіксує футер */
+    bottom: 0; /* Закріплює його внизу */
+    left: 0;
+    width: 100%; /* Робить на всю ширину */
+    z-index: 1000; /* Щоб не ховався за іншими елементами */
+    clip-path: polygon(50% -300%, 0% 100%, 100% 100%);
+}
+
+body {
+    padding-bottom: 80px; /* Додаємо відступ, щоб контент не заходив під футер */
+    margin: 0;
+}

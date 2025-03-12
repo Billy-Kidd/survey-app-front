@@ -23,7 +23,7 @@ body {
 .survey-title {
     display: block;
     position: absolute;
-    top: 20px; /* Adjust as needed */
+    top: 650px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
@@ -53,7 +53,7 @@ body {
     /*top: -50%; !* Adjust as needed *!*/
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
-    margin-top: 5px;
+    /*margin-top: 50px;*/
     font-size: 2rem;
     font-family: 'Montserrat' , sans-serif;
     /*font-weight: 400;*/

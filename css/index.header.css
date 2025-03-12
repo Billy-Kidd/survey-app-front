@@ -1,9 +1,16 @@
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-size: 1.5rem;
-    border-radius: 4px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 300%);
+}
+body {
+    padding-top: 80px; /* Додаємо відступ, щоб контент не заходив під хедер */
 }
