@@ -18,7 +18,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 10%;
     text-align: center;
     position: relative;
 }
@@ -26,7 +26,7 @@ body {
 .survey-title {
     display: block;
     position: absolute;
-    top: 200px; /* Adjust as needed */
+    top: 10%; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
@@ -52,13 +52,13 @@ body {
 
 .step p {
     /*position: absolute;*/
-    /*top: -50%; !* Adjust as needed *!*/
-    /*left: 50%;*/
+    top: -50%; /* Adjust as needed */
+    left: 50%;
     /*transform: translateX(-50%);*/
     /*margin-top: 50px;*/
     font-size: 3rem;
     font-family: 'Montserrat' , sans-serif;
-    /*font-weight: 400;*/
+    font-weight: 400;
 
 }
 
@@ -114,7 +114,7 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
     cursor: pointer;
     min-width: 100px;
@@ -142,6 +142,13 @@ button:hover {
 
 
 @media (max-width: 1024px) {
+    body {
+
+        overflow: hidden;
+
+    }
+
+
     .survey-container {
         width: 70%;
         min-width: 320px;
@@ -180,7 +187,7 @@ button:hover {
 @media (max-width: 768px) {
     body {
 
-        overflow: auto;
+        overflow: hidden;
         padding-top: 100px;
         padding-bottom: 100px;
         height: 80vh;
@@ -238,6 +245,13 @@ button:hover {
 
 /* 🔹 Дуже маленькі екрани (до 480px) */
 @media (max-width: 480px) {
+
+    body {
+        height: 100vh;
+        margin: 10px;
+        overflow: hidden;
+    }
+
     .survey-container {
         width: 95%;
         padding: 15px;
@@ -284,8 +298,8 @@ button:hover {
 
 
     body {
-        height: 100vh;
-        margin: 10px;
+        height: 50vh;
+        overflow: hidden;
     }
 
 
@@ -302,14 +316,8 @@ button:hover {
     }
 
     .survey-title {
-        display: block;
-        position: absolute;
-        top: 200px; /* Adjust as needed */
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-bottom: 20px;
+        top: 10%; /* Adjust as needed */
+        margin-bottom: 20%;
     }
 
     .option {
