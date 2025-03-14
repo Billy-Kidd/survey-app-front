@@ -2,9 +2,9 @@ footer {
     background-color: deepskyblue;
 
     color: white;
-    padding: 20px;
+    padding: -10%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     position: fixed; /* Фіксує футер */
     bottom: 0; /* Закріплює його внизу */
     left: 0;
@@ -18,3 +18,4 @@ body {
     padding-bottom: 80px; /* Додаємо відступ, щоб контент не заходив під футер */
     margin: 0;
 }
+

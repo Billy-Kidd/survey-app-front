@@ -7,9 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     margin: 0;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .survey-container {
@@ -25,14 +26,13 @@ body {
 .survey-title {
     display: block;
     position: absolute;
-    top: 650px; /* Adjust as needed */
+    top: 200px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-
 
 .step {
     display: none;
@@ -56,7 +56,7 @@ body {
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
     /*margin-top: 50px;*/
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Montserrat' , sans-serif;
     /*font-weight: 400;*/
 
@@ -102,7 +102,6 @@ input, textarea {
     background-color: #4CAF50;
     border-radius: 20%;
 
-
 }
 
 /* Застосування стилю до span при checked */
@@ -110,7 +109,6 @@ input, textarea {
     font-weight: bold;
     text-align: center;
 }
-
 
 button {
     background-color: #007bff;
@@ -140,4 +138,202 @@ button:hover {
 .error {
     border: 2px solid red;
     background-color: #ffe6e6;
+}
+
+@media (max-width: 1024px) {
+    .survey-container {
+        width: 70%;
+        min-width: 320px;
+        top: 10px;
+    }
+
+    .option {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        min-width: 100px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+
+    .step p {
+        /*position: absolute;*/
+        /*top: -50%; !* Adjust as needed *!*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*margin-top: 50px;*/
+        font-size: 2rem;
+        font-family: 'Montserrat' , sans-serif;
+        /*font-weight: 400;*/
+
+    }
+}
+
+/* 🔹 Мобільні телефони (до 768px) */
+@media (max-width: 768px) {
+    body {
+
+        overflow: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 80vh;
+    }
+
+    .survey-container {
+        width: 90%;
+        min-width: 300px;
+
+    }
+
+    .survey-title {
+        font-size: 16px;
+        padding-top: 5%;
+
+    }
+
+    .option {
+        width: 70px;
+        height: 70px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .step p {
+        /*position: absolute;*/
+        /*top: -50%; !* Adjust as needed *!*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*margin-top: 50px;*/
+        font-size: 2rem;
+        font-family: 'Montserrat' , sans-serif;
+        /*font-weight: 400;*/
+
+    }
+}
+
+/* 🔹 Дуже маленькі екрани (до 480px) */
+@media (max-width: 480px) {
+    .survey-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .survey-title {
+        font-size: 12px;
+        padding-top: 5%;
+
+    }
+
+    .option {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    input, textarea {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .step p {
+        /*position: absolute;*/
+        /*top: -50%; !* Adjust as needed *!*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*margin-top: 50px;*/
+        font-size: 1rem;
+        font-family: 'Montserrat' , sans-serif;
+        /*font-weight: 400;*/
+
+    }
+}
+
+
+
+/* 🔹 Дуже маленькі екрани (до 480px) */
+@media (max-width: 425px) {
+
+
+    body {
+        height: 100vh;
+        margin: 10px;
+    }
+
+
+
+    label{
+        font-size: 0.8rem;
+
+    }
+
+
+    .survey-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .survey-title {
+        display: block;
+        position: absolute;
+        top: 200px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .option {
+        width: 40px;
+        height: 40px;
+    }
+
+    button {
+        font-size: 0.65rem;
+        padding: 8px;
+    }
+
+    input, textarea {
+        font-size: 0.65rem;
+        padding: 5px;
+    }
+    .step p {
+        /*position: absolute;*/
+        /*top: -50%; !* Adjust as needed *!*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*margin-top: 50px;*/
+        font-size: 0.8rem;
+        font-family: 'Montserrat' , sans-serif;
+        /*font-weight: 400;*/
+
+    }
 }
